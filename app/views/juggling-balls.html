@@ -15,36 +15,36 @@ Question page template – {{ serviceName }} – GOV.UK Prototype Kit
 
     <!-- <h1 class="govuk-heading-xl">How many balls can you juggle?</h1> -->
 
-    <form class="form" action="/juggling-trick" method="post">
+    <form class="form" action="/juggling-balls-answer" method="post">
 
       {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
-{{ govukRadios({
-  idPrefix: "how-many-balls",
-  name: "how-many-balls",
-  fieldset: {
-    legend: {
+      {{ govukRadios({
+      idPrefix: "how-many-balls",
+      name: "how-many-balls",
+      fieldset: {
+      legend: {
       text: "How many balls can you juggle?",
       isPageHeading: true,
       classes: "govuk-fieldset__legend--l"
-    }
-  },
-  items: [
-    {
+      }
+      },
+      items: [
+      {
       value: "3 or more",
       text: "3 or more"
-    },
-    {
+      },
+      {
       value: "1 or 2",
       text: "1 or 2"
-    },
-    {
+      },
+      {
       value: "None - I cannot juggle",
       text: "None - I cannot juggle"
-    }
-  ]
-}) }}
-<!-- <div class="govuk-form-group">
+      }
+      ]
+      }) }}
+      <!-- <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
